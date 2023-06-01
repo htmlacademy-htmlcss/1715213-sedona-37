@@ -40,10 +40,7 @@
           <h1 class="catalog-header-title">Гостинницы Седоны</h1>
           <ul class="breadcrumbs">
             <li class="breadcrumbs-item">
-              <img src="#">
-            </li>
-            <li class="breadcrumbs-item">
-              <img src="#">
+              <img src="#" alt="home">
             </li>
             <li class="breadcrumbs-item">
               <a class="breadcrumbs-link">Гостинницы</a>
@@ -97,10 +94,25 @@
               </li>
             </ul>
           </fieldset>
-          <fieldset class="catalog-filter-group">
-            <legend class="catalog-filter-title">Стоимость, ₽:</legend>
-            <input class="cost-min" value="0">
-            <input class="cost-max" value="9000">
+          <fieldset class="catalog-filter">
+            <div class="filter-wrapper">
+              <div class="filter-range">
+                <span class="filter-text">от</span>
+                <input class="cost-min" type="number" placeholder="цена от" aria-label="минимальная стоимость" value="0">
+                <span class="filter-text">до</span>
+                <input class="cost-max" type="number" placeholder="цена до" aria-label="максимальная стоимость" value="9000">
+              </div>
+              <div class="cost-range">
+                <button class="button cost-range" type="button">
+                  <span class="visually-hidden">установить минимальную стоимость</span>
+                </button>
+                <button class="cost-range" type="button">
+                  <span class="visually-hidden">установить максимальную стоимость</span>
+                </button>
+                <span class="cost-range line"></span>
+                <span class="cost-range line active"></span>
+              </div>
+            </div>
           </fieldset>
           <button class="button button-submit" type="submit">Применить</button>
           <button class="button button-reset" type="reset">Сбросить</button>
