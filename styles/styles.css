@@ -75,7 +75,7 @@ body {
   text-transform: uppercase;
 }
 
-.main-container {
+.page-container {
   width: 1200px;
   margin: 0 auto;
 }
@@ -285,7 +285,7 @@ a.search {
   color: #FFFFFF;
 }
 
-.main-footer-container {
+.page-footer-container {
   display: flex;
   justify-content: space-between;
   width: 1200px;
@@ -304,6 +304,9 @@ a.search {
 }
 
 .filter {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   background-image: url('../images/catalog_background.jpg');
   background-size: 100% auto;
   background-repeat: no-repeat;
@@ -346,6 +349,23 @@ a.search {
   line-height: 24px;
   text-transform: capitalize;
   color: #FFFFFF;
+}
+
+.catalog {
+  display: flex;
+  flex-direction: column;
+}
+
+.catalog-sort {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hotel-card-container {
+  display: flex;
+  flex-direction: row;
 }
 
 .found {
