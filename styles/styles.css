@@ -798,11 +798,12 @@ fieldset {
   padding: 0;
   width: 1060px;
   margin: 0;
+  margin-bottom: 80px;
 }
 
 .hotel-card {
   display: grid;
-  grid-template-columns: 140px 140px;
+  grid-template-columns: repeat(2, 140px);
   row-gap: 16px;
   column-gap: 20px;
   padding: 20px;
