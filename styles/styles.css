@@ -792,22 +792,20 @@ fieldset {
 }
 
 .hotel-card-container {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(3, 340px);
   gap: 20px;
+  padding: 0;
   width: 1060px;
   margin: 0;
 }
 
 .hotel-card {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  flex-wrap: wrap;
-  width: 340px;
-  min-height: 438px;
+  display: grid;
+  grid-template-columns: 140px 140px;
+  row-gap: 16px;
+  column-gap: 20px;
+  padding: 20px;
   border: 1px solid #e6e6e6;
   border-radius: 4px;
 }
@@ -837,10 +835,12 @@ fieldset {
 }
 
 .hotel-card-link {
+  grid-column: 1/-1;
   text-decoration: none;
 }
 
 .hotel-card-title {
+  grid-column: 1/-1;
   font-family: 'PT Sans', sans-serif;
   font-weight: 700;
   font-size: 24px;
@@ -912,15 +912,15 @@ fieldset {
 }
 
 .star-4 {
-  min-width: 72px;
+  width: 72px;
 }
 
 .star-3 {
-  min-width: 54px;
+  width: 54px;
 }
 
 .star-2 {
-  min-width: 37px;
+  width: 37px;
 }
 
 .rating {
