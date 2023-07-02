@@ -813,7 +813,7 @@ fieldset {
 .hotel-card {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 212px 1fr;
+  grid-template-rows: repeat(5, min-content);
   row-gap: 16px;
   column-gap: 20px;
   padding: 20px;
@@ -836,7 +836,6 @@ fieldset {
   line-height: 28px;
   color: #000000;
   width: 300px;
-  height: 28px;
   margin: 0;
 }
 
