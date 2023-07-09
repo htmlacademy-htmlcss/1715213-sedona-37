@@ -560,6 +560,20 @@ section.search {
   background-color: #F2F2F2;
   font-size: 17px;
   line-height: 24px;
+  outline: none;
+}
+
+.email input:focus {
+  border: 3px solid #83B3D3;
+}
+
+.email input:hover {
+  background-color: #E6E6E6;
+  border: none;
+}
+
+.email input:active {
+  border: none;
 }
 
 .button-subscribe {
@@ -915,11 +929,59 @@ fieldset {
   color: #FFFFFF4D;
 }
 
+.cost-range {
+  position: relative;
+  margin-top: 28px;
+}
+
+.line {
+  position: absolute;
+  display: block;
+  width: 287px;
+  height: 4px;
+  top: -12px;
+  background-color: #FFFFFF;
+  opacity: 0.30000001192092896;
+}
+
+.line-active {
+  position: absolute;
+  display: block;
+  width: 226px;
+  height: 4px;
+  top: -12px;
+  background-color: #FFFFFF;
+}
+
 .cost-range .button-cost {
+  position: absolute;
   width: 20px;
   height: 20px;
   background: #FFFFFF;
   border-radius: 5px;
+  border-color: #FFFFFF;
+  cursor: pointer;
+}
+
+.cost-range .button-cost:nth-child(1) {
+  top: 9px;
+}
+
+.cost-range .button-cost:nth-child(2) {
+  top: 9px;
+  right: 60px;
+}
+
+.cost-range .button-cost:focus-visible {
+  border-color: #FFFFFF;
+}
+
+.cost-range .button-cost:focus {
+  border-color: #83B3D3;
+}
+
+.cost-range .button-cost:active {
+  border-color: #83B3D3;
 }
 
 .fieldset-buttons {
@@ -937,10 +999,6 @@ fieldset {
 .filter-range {
   display: flex;
   justify-content: space-between;
-}
-
-.cost-range {
-  margin-top: 28px;
 }
 
 .filter-range input {
@@ -1406,4 +1464,289 @@ fieldset {
 
 .social-catalog {
   margin-left: -3px;
+}
+
+.modal-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(242, 242, 242, 0.80);
+  z-index: 2;
+}
+
+/* .modal-container-close {
+  display: none;
+} */
+
+.modal {
+  position: relative;
+  margin: auto;
+  padding: 64px 70px;
+  background-color: #FFFFFF;
+  border-radius: 20px;
+  box-shadow: 0 25px 50px 0 rgba(0, 0, 0, 0.15);
+}
+
+.modal-search {
+  width: 717px;
+}
+
+.modal-close {
+  position: absolute;
+  padding: 0;
+  top: 67px;
+  right: 54px;
+  width: 55px;
+  height: 52px;
+  background-color: #F2F2F2;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.modal-close::after {
+  content: '';
+  display: block;
+  background-image: url('../images/close.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 14px;
+  height: 14px;
+  margin: auto;
+}
+
+.modal-title {
+  margin: 0 auto;
+  margin-bottom: 64px;
+  margin-left: -4px;
+  font-family: 'PT Sans';
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 36px;
+  text-transform: uppercase;
+  text-align: left;
+}
+
+.modal-content {
+  max-width: 577px;
+}
+
+.modal-form {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: repeat(4, min-content);
+  row-gap: 23px;
+  word-wrap: break-word;
+}
+
+.search-field {
+  display: grid;
+  grid-template-columns: 122px 1fr;
+  column-gap: 15px;
+  row-gap: 4px;
+}
+
+.field-date {
+  grid-column: 1/-1;
+  position: relative;
+}
+
+.search-field-label {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+  text-transform: capitalize;
+  color: #000000;
+  align-self: center;
+}
+
+.field {
+  font-family: 'PT Sans';
+  font-size: 18px;
+  line-height: 24px;
+  background-color: #F2F2F2;
+  border: none;
+  border-radius: 4px;
+  padding: 12px 20px 12px 20px;
+}
+
+.field:hover {
+  background-color: #e6e6e6;
+}
+
+.field:focus {
+  background-color: #e6e6e6;
+  outline: 3px solid #83B3D3;
+}
+
+.field-date .field {
+  background-image: url('../images/calendar.svg');
+  background-repeat: no-repeat;
+  background-position: center right 20px;
+}
+
+.text-error {
+  grid-column: 2/-1;
+  font-size: 16px;
+  padding: 0 20px;
+  color: #FF5757;
+}
+
+.text-info {
+  grid-column: 2/-1;
+  font-size: 16px;
+  padding: 0 20px;
+}
+
+.field-age {
+  max-width: 250px;
+  align-self: start;
+}
+
+.field-age:nth-child(2n) {
+  max-width: 250px;
+  justify-self: end;
+}
+
+.field-wrapper {
+  display: grid;
+  grid-template-columns: 40px 31px 40px;
+  height: 48px;
+}
+
+.field-wrapper input[type="number"]::-webkit-outer-spin-button,
+.field-wrapper input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.button-count {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 14px 10px;
+  border: none;
+  background-color: #F2F2F2;
+  cursor: pointer;
+}
+
+.button-count svg {
+  fill:#000000;
+  fill-opacity: 0.3;
+}
+
+.button-count:hover svg {
+  fill: #000000;
+  fill-opacity: 1;
+}
+
+.button-count:active svg {
+  fill: #0000004D;
+}
+
+.count-field {
+  border-radius: 0;
+  padding: 12px 4px;
+  text-align: center;
+  z-index: 1;
+  outline: none;
+}
+
+.field-icon {
+  position: relative;
+  padding-left: 3px;
+  padding-right: 26px;
+  align-self: center;
+}
+
+.tooltip {
+  position: absolute;
+  margin-top: 0;
+  margin-left: 10px;
+  width: 26px;
+  height: 26px;
+}
+
+.tooltip-toggle {
+  display: block;
+  padding: 0;
+  margin: 0;
+  background-color: #83B3D3;
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+  border: none;
+  background-image: url('../images/tooltip.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.tooltip-text {
+  width: 256px;
+  min-height: 143px;
+  position: absolute;
+  padding: 20px 22px;
+  top: 100%;
+  left: 50%;
+  margin-top: 14px;
+  color: #FFFFFF;
+  background-color: #333333;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  border-radius: 10px;
+  box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.30);
+  transform: translateX(-50%);
+  display: none;
+}
+
+.tooltip:hover .tooltip-text {
+  display: block;
+  transition: 1s;
+}
+
+.tooltip-text::after {
+  content: '';
+  background-image: url('../images/tooltip triangle.svg');
+  background-repeat: no-repeat;
+  width: 19px;
+  height: 9px;
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.button-find {
+  grid-column: 1/-1;
+  border-radius: 10px;
+  font-family: 'PT Sans';
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  text-transform: uppercase;
+  padding: 18px 77px;
+  margin-top: 25px;
+  background-color: #82B3D3;
+  border: none;
+  color: #FFFFFF;
+  cursor: pointer;
+}
+
+.button-find:hover {
+  background-color: #68A2CA;
+}
+
+.button-find:focus {
+  background-color: #68A2CA;
+}
+
+.button-find:active {
+  background-color: #68A2CA;
+  color: #FFFFFF4D;
 }
