@@ -678,17 +678,12 @@ section.search {
 }
 
 .footer {
-  position: relative;
   width: 1200px;
-  height: 120px;
+  min-height: 120px;
   margin: 0 auto;
 }
 
 .page-footer-container {
-  position: absolute;
-  top: 40px;
-  left: 70px;
-  bottom: 30px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -701,6 +696,8 @@ section.search {
   width: 1060px;
   padding: 0;
   margin: 0 auto;
+  margin-top: 37px;
+  margin-left: 70px;
 }
 
 .social {
@@ -896,6 +893,7 @@ fieldset {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  min-height: 160px;
   gap: 70px;
 }
 
@@ -914,7 +912,7 @@ fieldset {
   margin: -1px;
   padding: 0;
   min-width: 150px;
-  height: 157px;
+  min-height: 157px;
 }
 
 .catalog-filter-list {
@@ -1725,7 +1723,11 @@ fieldset {
 }
 
 .social-catalog {
-  margin-left: -3px;
+  margin-left: -1px;
+}
+
+.social-item:nth-child(1) {
+  margin-left: 2px;
 }
 
 .modal-container {
