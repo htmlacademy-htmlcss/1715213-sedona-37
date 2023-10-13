@@ -54,11 +54,6 @@ body {
           box-shadow: 0 0 20px #000000;
 }
 
-
-ul {
-  list-style-type: none;
-}
-
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -113,6 +108,7 @@ ul {
   margin-top: -5px;
   margin-left: 27px;
   padding: 0;
+  list-style-type: none;
 }
 
 .navigation-user {
@@ -312,6 +308,7 @@ ul {
       flex-wrap: wrap;
   margin: 0;
   padding: 0;
+  list-style-type: none;
 }
 
 .advantages-image {
@@ -450,6 +447,7 @@ ul {
           justify-content: space-between;
   padding: 0;
   margin: 0;
+  list-style-type: none;
 }
 
 .features-item {
@@ -713,6 +711,7 @@ section.search {
       flex-wrap: wrap;
   gap: 10px;
   padding: 0;
+  list-style-type: none;
 }
 
 .link-social svg {
@@ -841,6 +840,7 @@ section.search {
   width: 100%;
   height: 21px;
   gap: 10px;
+  list-style-type: none;
 }
 
 .breadcrumbs-item {
@@ -884,16 +884,13 @@ section.search {
   color: #FFFFFF4D;
 }
 
-fieldset {
-  border: none;
-}
-
 .catalog-filter {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   min-height: 160px;
   gap: 70px;
+  border: none;
 }
 
 .catalog-filter-title {
@@ -912,6 +909,7 @@ fieldset {
   padding: 0;
   min-width: 150px;
   min-height: 157px;
+  border: none;
 }
 
 .catalog-filter-list {
@@ -925,6 +923,7 @@ fieldset {
   gap: 16px;
   padding: 0;
   margin: 0;
+  list-style-type: none;
 }
 
 .catalog-filter-item {
@@ -1643,6 +1642,7 @@ fieldset {
   margin-top: 39px;
   width: 1060px;
   min-height: 60px;
+  list-style-type: none;
 }
 
 .pagination-item {
@@ -1819,7 +1819,7 @@ fieldset {
   margin: 0 auto;
   margin-bottom: 64px;
   margin-left: -4px;
-  font-family: 'PT Sans';
+  font-family: 'PT Sans', sans-serif;
   font-size: 30px;
   font-weight: 700;
   line-height: 36px;
@@ -1912,7 +1912,7 @@ fieldset {
 }
 
 .field {
-  font-family: 'PT Sans';
+  font-family: 'PT Sans', sans-serif;
   font-size: 18px;
   line-height: 24px;
   background-color: #F2F2F2;
@@ -2091,7 +2091,7 @@ fieldset {
 .button-find {
   grid-column: 1/-1;
   border-radius: 10px;
-  font-family: 'PT Sans';
+  font-family: 'PT Sans', sans-serif;
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
