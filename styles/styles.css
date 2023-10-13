@@ -84,6 +84,7 @@ ul {
   color: #FFFFFF;
   background-color: #FFFFFF;
   padding: 0 70px 0 70px;
+  min-height: 68px;
 }
 
 .navigation {
@@ -106,7 +107,7 @@ ul {
           justify-content: flex-start;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  max-width: 500px;
+  width: 338px;
   min-height: 68px;
   margin: 0;
   margin-top: -5px;
@@ -236,7 +237,6 @@ ul {
 }
 
 .hero{
-  background-color: #81B3D34D;
   background: url('../images/main_background.jpg');
   background-size: 100% auto;
   background-repeat: no-repeat;
@@ -634,10 +634,6 @@ section.search {
   font-size: 17px;
   line-height: 24px;
   outline: none;
-}
-
-.email input:focus {
-  border: 3px solid #83B3D3;
 }
 
 .email input:hover {
@@ -1247,6 +1243,7 @@ fieldset {
   background-image: url('../images/select_arrow.svg');
   background-repeat: no-repeat;
   background-position: 258px 18px;
+  background-color: #FFFFFF;
   cursor: pointer;
   outline: none;
 }
